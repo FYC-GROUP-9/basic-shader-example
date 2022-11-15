@@ -1,16 +1,16 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: rgb(40, 40, 40);
+  display: flex; /* On utilise des flexbox pour l'alignement */
+  justify-content: center; /* On centre l'élément horizontalement */
+  align-items: center; /* On centre l'élément verticalement */
+  height: 100vh; /* Hauteur de la page à 100% de la taille de l'écran */
+  width: 100vw; /* Largeur de la page à 100% de la taille de l'écran */
+  margin: 0; /* Pas de margin */
+  padding: 0; /* Pas de padding */
+  overflow: hidden; /* On désactive le scroll */
+  background: rgb(40, 40, 40); /* Un fond gris foncé par défaut */
   background: radial-gradient(
     circle,
     rgba(40, 40, 40, 1) 0%,
     rgba(0, 0, 0, 1) 100%
-  );
+  ); /* Un dégradé radial du gris au noir si le navigateur le supporte */
 }
