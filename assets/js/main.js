@@ -37,7 +37,6 @@ window.onload = function () {
     canvas.getContext("webkit-3d");
 
   if (gl) {
-    var extensions = gl.getSupportedExtensions();
     // Setting the viewport
     gl.viewportWidth = canvas.width;
     gl.viewportHeight = canvas.height;
@@ -504,5 +503,7 @@ window.onload = function () {
     };
 
     requestAnimationFrame(loop);
+  } else {
+    console.error("WebGL not supported");
   }
 };
