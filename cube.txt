@@ -1,0 +1,308 @@
+ const cube = {
+      top: {
+        UpperLeft: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 0.5,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 0.5,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 0.5,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 0.5,
+          },
+        },
+        indices: [0, 1, 2, 0, 2, 3],
+      },
+      left: {
+        UpperLeft: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.75,
+            g: 0.75,
+            b: 0.75,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.75,
+            g: 0.75,
+            b: 0.75,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.75,
+            g: 0.75,
+            b: 0.75,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.75,
+            g: 0.75,
+            b: 0.75,
+          },
+        },
+        indices: [5, 4, 6, 6, 4, 7],
+      },
+      right: {
+        UpperLeft: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.25,
+            g: 0.25,
+            b: 0.75,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.25,
+            g: 0.25,
+            b: 0.75,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.25,
+            g: 0.25,
+            b: 0.75,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.25,
+            g: 0.25,
+            b: 0.75,
+          },
+        },
+        indices: [8, 9, 10, 8, 10, 11],
+      },
+      front: {
+        UpperLeft: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.15,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.15,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.15,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.15,
+          },
+        },
+        indices: [13, 12, 14, 15, 14, 12],
+      },
+      back: {
+        UpperLeft: {
+          position: {
+            x: 1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.0,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.0,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.0,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: -1.0,
+            y: 1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 1.0,
+            g: 0.0,
+            b: 0.0,
+          },
+        },
+        indices: [16, 17, 18, 16, 18, 19],
+      },
+      bottom: {
+        UpperLeft: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 1.0,
+          },
+        },
+        UpperRight: {
+          position: {
+            x: -1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 1.0,
+          },
+        },
+        LowerLeft: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: 1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 1.0,
+          },
+        },
+        LowerRight: {
+          position: {
+            x: 1.0,
+            y: -1.0,
+            z: -1.0,
+          },
+          color: {
+            r: 0.5,
+            g: 0.5,
+            b: 1.0,
+          },
+        },
+        indices: [21, 20, 22, 22, 20, 23],
+      },
+    };
