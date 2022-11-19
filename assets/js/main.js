@@ -499,9 +499,14 @@ window.onload = function () {
         0
       );
 
+      /*
+       * The function is recursive and will call itself each render frame
+       * in order to keep the animation going.
+       */
       requestAnimationFrame(loop);
     };
 
+    // We instantiate the animation at the end of the script
     requestAnimationFrame(loop);
   } else {
     console.error("WebGL not supported");
