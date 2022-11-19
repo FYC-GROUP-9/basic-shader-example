@@ -483,7 +483,6 @@ window.onload = function () {
     var angle = 0;
 
     var loop = function () {
-      //angle = 0;
       angle = (performance.now() / 1000 / 6) * 2 * Math.PI;
       mat4.rotate(yRotationMatrix, identityMatrix, angle, [1, 1, 0]);
       mat4.rotate(xRotationMatrix, identityMatrix, angle / 4, [1, 0, 0]);
