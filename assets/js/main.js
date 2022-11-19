@@ -458,6 +458,7 @@ window.onload = function () {
     var projMatrix = new Float32Array(16);
 
     mat4.identity(worldMatrix);
+    // We set the coordinates the camera is looking at
     mat4.lookAt(viewMatrix, [0, 0, -8], [0, 0, 0], [0, 1, 0]);
     mat4.perspective(
       projMatrix,
@@ -471,10 +472,10 @@ window.onload = function () {
     gl.uniformMatrix4fv(matViewUniformLocation, gl.FALSE, viewMatrix);
     gl.uniformMatrix4fv(matProjUniformLocation, gl.FALSE, projMatrix);
 
+    // Render and cube rotation
+
     var xRotationMatrix = new Float32Array(16);
     var yRotationMatrix = new Float32Array(16);
-
-    // Redner and cube rotation
 
     var identityMatrix = new Float32Array(16);
     mat4.identity(identityMatrix);
